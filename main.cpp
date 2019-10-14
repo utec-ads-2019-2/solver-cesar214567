@@ -45,7 +45,7 @@ vector<string> ordenacion_inicial(string palabra){
     stack<string> stackk;
     vector<string> devolucion;
     int i=0;
-    if(palabra[0]=='('){
+    while(palabra[i]=='('){
         i++;
     }
     while (palabra[i]!='\n' && i<palabra.size()){
