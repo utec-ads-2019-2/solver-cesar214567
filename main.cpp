@@ -1,5 +1,5 @@
 #include <iostream>
-#include "nodo.h"
+//#include "nodo.h" ??? Qué es nodo?
 #include <stack> 
 #include <string>
 #include <vector> 
@@ -182,6 +182,13 @@ double get_valor_de_palabra(string palabra){
 
 
 int main(){
+    /** No funciona con los siguientes casos:
+     * 7/4*((a+b)*a)+3
+     * 2+(3)
+     * 7/4*((a+b)^4*a)+3
+     * ((7*3)/4+6*(a^2)/b)*(5)
+     * etc...
+     * */
     string palabra;
     double value=0;
     cin>>palabra;
